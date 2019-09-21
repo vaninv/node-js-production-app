@@ -1,0 +1,20 @@
+{
+  "id": "/ShipPayload",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "title"
+  ],
+  "properties": {
+    "title": {
+      "$id": "#/properties/title",
+      "type": "string",
+      "examples": [
+        "Zodiac"
+      ],
+      "pattern": "^([А-Яа-яA-Za-z\\d\\s]*)$"
+    }
+  },
+  "additionalProperties": false
+}

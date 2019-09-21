@@ -1,0 +1,46 @@
+{
+  "name": "real-worl-node-app-example",
+  "version": "1.0.0",
+  "description": "An example of real-world node js application",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "lint": "eslint --ext .js .",
+    "lint-fix": "eslint --ext .js . --fix",
+    "start": "NODE_ENV=production index.js",
+    "start-dev": "NODE_ENV=development nodemon --inspect index.js",
+    "db-migrate": "sequelize db:migrate",
+    "db-seed": "sequelize db:seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaninv/node-js-production-app.git"
+  },
+  "keywords": [
+    "nodejs",
+    "tutorial"
+  ],
+  "author": "Vasily Vanin",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/vaninv/node-js-production-app/issues"
+  },
+  "homepage": "https://github.com/vaninv/node-js-production-app#readme",
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "express": "4.17.1",
+    "express-validator": "6.2.0",
+    "jsonschema": "1.2.4",
+    "mysql2": "1.7.0",
+    "nodemon": "1.19.2",
+    "sequelize": "5.18.1",
+    "sequelize-cli": "5.5.1",
+    "websocket": "1.0.30",
+    "winston": "3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "6.3.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "2.18.2"
+  }
+}
